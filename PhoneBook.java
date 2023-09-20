@@ -89,7 +89,6 @@ public class PhoneBook {
     }
 
     public void printAllEntries() {
-        // сортировка по убыванию номера
         book.values().stream()
                 .sorted((a, b) -> b.getNumbers().size() - (a.getNumbers().size()))
                 .forEach(System.out::println);
